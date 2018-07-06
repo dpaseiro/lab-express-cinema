@@ -1,0 +1,22 @@
+<h1>Movies</h1>
+<div class="moviesFormat">
+{{#each moviesArray}}
+
+<div class="col-sm-3 mainContent">
+
+    <h6 class="">
+    {{this.title}}
+    </h6>
+        <h2>
+   <img src="{{this.image}}" alt="movie image"> 
+    </h2>
+
+    <a href="/movies/{{this._id}}"> Movie Info </a>
+<br><br>
+
+    <hr>
+</div>
+
+{{/each}}
+    <a href="/"> Home </a>
+</div>
